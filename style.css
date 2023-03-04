@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
   background-image: linear-gradient(90deg, #0b0615, #10032d);
@@ -13,6 +18,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 4px solid white;
+
+  border-image: -webkit-linear-gradient(45deg, #890cbe, #00ff2a) 3;
 }
 
 .clock div {
@@ -25,16 +33,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: -webkit-linear-gradient(90deg, #0cbe3e, #00ff2a);
+  background: -webkit-linear-gradient(45deg, #890cbe, #00ff2a);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .clock span {
   font-size: 60px;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
-  background: -webkit-linear-gradient(90deg, #0cbe3e, #12501c);
+  background: -webkit-linear-gradient(45deg, #890cbe, #00ff2a);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
